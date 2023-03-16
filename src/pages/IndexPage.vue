@@ -9,12 +9,10 @@
       </q-btn>
     </div>
     <div v-if="calaca === true" class="vid">
-      <video width="320" height="240" controls autoplay>
+      <video loop width=" 320" height="240" controls autoplay volume="0.45">
         <source src="../assets/vid/Skull_Trumpet.mp4" type="video/mp4">
       </video>
-      <!-- <q-video :ratio="16 / 9" src="https://www.youtube.com/embed/Ts1HltbRIlI" />
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ts1HltbRIlI" title="YouTube video player"
-        frameborder="0" allow="autoplay;" allowfullscreen></iframe> -->
+
     </div>
   </div>
 </template>
@@ -32,7 +30,8 @@ export default ({
   methods: {
     activateCalca() {
       return this.calaca = true
-    }
+    },
+
   }
 })
 </script>
