@@ -25,6 +25,10 @@
 				<source src="../assets/vid/skull_trumpet.mp4" type="video/mp4">
 			</video>
 			<img src="../assets/img/skeletons.gif" alt="">
+			<div class="close">
+				<img src="../assets/img/bones.png" alt="bones" @click="partyPopper()">
+				<p>Close</p>
+			</div>
 		</div>
 	</div>
 </template>
@@ -43,6 +47,9 @@ export default ({
 		activateCalca() {
 			return this.calaca = true
 		},
+		partyPopper(){
+			return this.calaca = false
+		}
 	}
 })
 </script>
@@ -92,6 +99,20 @@ export default ({
 		video {
 			width: 800px;
 			height: auto;
+		}
+		.close{
+			translate: 1px 330px;
+			img{
+				width: 50px;
+				filter: invert(1);
+			}
+			p {
+				color: white;
+				margin-top: 10px;
+				font-size: 1.3rem;
+				font-family: "Pacific";
+			}
+
 		}
 	}
 }
