@@ -105,6 +105,7 @@ export default ({
 			img{
 				width: 50px;
 				filter: invert(1);
+				cursor: pointer;
 			}
 			p {
 				color: white;
